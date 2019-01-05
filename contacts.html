@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>bookstore.com</title>
+        
+        <!-- Code below needed to adding a Google Map with a Marker to Website -->
+        <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+                height: 400px;  /* The height is 400 pixels */
+                width: 100%;  /* The width is the width of the web page */
+                }
+        </style>
+
+    </head>
+    <body>
+        <h3>bookstore.com</h3>
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="contacts.html">About us</a></li>
+            </ul>
+            <hr>
+
+        <h1>About us</h1>
+        
+        <fieldset>
+                <legend>Write us</legend>
+                <form action="feedback.php" method="post">
+                    <input type="text" name="fullname" placeholder="Your full name">
+                    <br>
+                    <input type="email" name="email" placeholder="Your e-mail">
+                    <br>
+                    <input type="text" name="subject" placeholder="Message subject">
+                    <br>
+                    <!--<label for="msgtext">Message body:</label>
+                    <br>-->
+                    <textarea name="message" id="msgtext" rows="10" cols="50" placeholder="Message body"></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </fieldset>
+    
+            <h2>Contacts</h2>
+            <p>
+                <strong>Phone: </strong> +7 383 363 05 55<br>
+                <strong>Address: </strong> Novosibirsk, ploshchad' Karla Marksa, 7<br>
+                <strong>Email: </strong> bookstore@bookstore.com<br>
+            </p>
+            <br><br>
+                
+            <!-- Code below needed to adding a Google Map with a Marker to Website -->
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                    // The location of Uluru
+                    var uluru = {lat: 54.980047, lng: 82.897847};
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), {zoom: 14, center: uluru});
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({position: uluru, map: map});
+                    }
+                </script>
+                
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+                
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRSNOVtAfKQCgqWI2o_FZ3O_ZfGy4M1dk&callback=initMap">
+                </script>
+
+        <hr>
+        &copy; All rights reserved.
+    </body>
+</html>
