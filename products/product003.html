@@ -6,14 +6,26 @@
         <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
-        <h3>bookstore.com</h3>
-        <div class="main-menu">
-            <a href="../index.html">Main page</a>
-            <br>
-            <a href="../catalogue.html">Catalogue</a>
-            <br>
-            <a href="../contacts.html">About us</a>
-            <br>
+        <div class="header">
+            <div class="main-title">
+                <a href="../index.html">
+                    <img class="logo" src="../images/bookmark.svg" alt="bookmark">
+                </a>
+                <br>bookstore.com<br>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">Main page</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../contacts.html">About us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <hr>
         <h1>JavaScript and jQuery: Interactive Front-End Web Development</h1>
@@ -32,29 +44,44 @@
             newcomers and invaluable for seasoned coders.<br>
         </p>
         <h2 class="product-header">Product details:</h2>
-            <ul class="product-features">
-                <li>
-                    <strong>Paperback:</strong> 640 pages<br>
-                </li>
-                <li>
-                    <strong>Publisher:</strong>  Wiley; 1 edition (July 21, 2014)<br>
-                </li>
-                <li>
-                    <strong>Language:</strong>  English<br>
-                </li>
-                <li>
-                    <strong>ISBN-10:</strong> 9781118871652<br>
-                </li>
-                <li>
-                    <strong>PISBN-13:</strong> 978-1118871652<br>
-                </li>
-                <li>
-                    <strong>Product Dimensions:</strong> 7.5 x 1.5 x 9.3 inches <br>
-                </li>
-                <li>
-                    <strong>Shipping Weight:</strong> 3 pounds<br>
-                </li>
-            </ul>
+        <table class="productFeatures">
+            <thead>
+                <tr>
+                    <th><u>Feature:</u></th>
+                    <th><u>Description:</u></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Paperback:</strong></td>
+                    <td>640 pages</td>
+                </tr>
+                <tr>
+                    <td><strong>Publisher:</strong></td>
+                    <td>Wiley; 1 edition (July 21, 2014)</td>
+                </tr>
+                <tr>
+                    <td><strong>Language:</strong></td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td><strong>ISBN-10:</strong></td>
+                    <td>9781118871652</td>
+                </tr>
+                <tr>
+                    <td><strong>PISBN-13:</strong></td>
+                    <td>978-1118871652</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Dimensions:</strong></td>
+                    <td>7.5 x 1.5 x 9.3 inches</td>
+                </tr>
+                <tr>
+                    <td><strong>Shipping Weight:</strong></td>
+                    <td>3 pounds</td>
+                </tr>
+            </tbody>
+        </table>    
         <h2 class="product-header">Description:</h2>
         <p class="product-fullDescription">
             In JavaScript & jQuery renowned author Jon Duckettdiscards the traditional programming book template and<br>
@@ -95,6 +122,8 @@
             with <i>HTMLand CSS Design and Build Websites</i> 9781118871645.
         </p>
         <hr>
-        &copy; All rights reserved.
+        <div class="footer">
+            &copy; All rights reserved.    
+        </div>
     </body>
 </html>

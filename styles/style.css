@@ -1,7 +1,7 @@
 /* Set the size of the div element that contains the map */
 #map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+    height: 400px;
+    width: 100%;
 }
 
 /* Set the background color, margins, font of the body of page */    
@@ -14,10 +14,20 @@ body {
     margin-bottom: 10%;
 }
 
-/* Set the main-menu font-size and margin */    
-.main-menu {
+/* Set the logo image size */    
+.logo {
+    width: 15%;
+}
+
+/* Set the main-title font-size and margin */    
+.main-title{
+    font: 24px bold;
+}
+
+/* Set the main-menu li font-size */    
+.main-menu li{
     font-size: 24px;
-    margin-left: 25px;
+    list-style: none;
 }
 
 /*Remove all Hyperlink Underlines Site-Wide */
@@ -25,20 +35,22 @@ a {
     text-decoration: none;
 }
 
-/* Set the colors for links */    
-/* unvisited link */
+/* Set the colors for unvisited link */
 a:link {
     color: red;
 }
-/* visited link */
+
+/* Set the colors for visited link */
 a:visited {
     color: green;
 } 
-/* mouse over link */
+
+/* Set the colors for mouse over link */
 a:hover {
     color: hotpink;
 } 
-/* selected link */
+
+/* Set the colors for selected link */
 a:active {
     color: blue;
 }
@@ -68,11 +80,31 @@ a:active {
     text-align: left;
 }
 
+/* Set the product description paragraph first letter style */
+.product-shortDescription:first-letter,
+.product-fullDescription:first-letter,
+.product-fullDescription li::first-letter {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
 /* Set the product details font style */
 .product-features {
     color: darkgray;
     font-size: 20px;
     font-family: fantasy;
+}
+
+/* Disable table border  */
+table {
+    border-collapse: collapse;
+}
+
+/* Set the table product details text-align and border-style */
+td, th, caption {
+    text-align: left;
+    border: 1px dotted gray;
 }
 
 /*  Set the product details style for marked list   */
@@ -90,6 +122,13 @@ a:active {
     height: 30px;
     color: #274e7d;
     font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* Set the email input form focus style */
+.contacts-form input[type="email"]:focus {
+    background: lightgrey;
+    color: black;
 }
 
 /* Set the borders and size of product image */
@@ -100,7 +139,18 @@ a:active {
     border-color: #484343
 }
 
+/* Disable border on hover product image */
+.product-img:hover {
+    border-color: transparent;
+}
+
 /* Set the size of catalogue image */
 .catalog-img {
     width: 300px;
+}
+
+/* Set the font-size of catalogue a href */
+.catalogue a {
+ font-size: 24px;
+ font-family: 'Times New Roman', Times, serif;
 }
