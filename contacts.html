@@ -3,27 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>bookstore.com</title>
-        <!-- Code below needed to adding a Google Map with a Marker to Website -->
-        <style>
-            /* Set the size of the div element that contains the map */
-            #map {
-                height: 400px;  /* The height is 400 pixels */
-                width: 100%;  /* The width is the width of the web page */
-                }
-        </style>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
         <h3>bookstore.com</h3>
-        <ul>
-            <li><a href="index.html">Main page</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
-            <li><a href="contacts.html">About us</a></li>
-        </ul>
+        <div class="main-menu">
+            <a href="index.html">Main page</a>
+            <br>
+            <a href="catalogue.html">Catalogue</a>
+            <br>
+            <a href="contacts.html">About us</a>
+            <br>
+        </div>
         <hr>
         <h1>About us</h1>
         <fieldset>
             <legend>Write us</legend>
-            <form action="feedback.php" method="post">
+            <form class="contacts-form" action="feedback.php" method="post">
                 <input type="text" name="fullname" placeholder="Your full name">
                 <br>
                 <input type="email" name="email" placeholder="Your e-mail">
@@ -32,7 +28,7 @@
                 <br>
                 <!--<label for="msgtext">Message body:</label>
                 <br>-->
-                <textarea name="message" id="msgtext" rows="10" cols="50" placeholder="Message body"></textarea>
+                <textarea name="message" id="msgtext" rows="10" cols="52"></textarea>
                 <br>
                 <input type="submit" value="Send">
             </form>

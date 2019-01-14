@@ -1,0 +1,106 @@
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+/* Set the background color, margins, font of the body of page */    
+body {
+    background: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:  25%;
+    margin-right:  25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Set the main-menu font-size and margin */    
+.main-menu {
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+/*Remove all Hyperlink Underlines Site-Wide */
+a {
+    text-decoration: none;
+}
+
+/* Set the colors for links */    
+/* unvisited link */
+a:link {
+    color: red;
+}
+/* visited link */
+a:visited {
+    color: green;
+} 
+/* mouse over link */
+a:hover {
+    color: hotpink;
+} 
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* Set the product header paragraph style */
+.product-header {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+/* Set the product overview paragraph style */
+.product-shortDescription {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* Set the product description paragraph style */
+.product-fullDescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Set the product details font style */
+.product-features {
+    color: darkgray;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+/*  Set the product details style for marked list   */
+.product-features li {
+    list-style: none;
+    background: url(../images/pencil.svg) no-repeat left center;
+    background-size: 2%;
+    padding-left: 25px;
+}
+
+/* Set the contacts input forms style */
+.contacts-form input[type="text"],
+.contacts-form input[type="email"] {
+    width: 400px;
+    height: 30px;
+    color: #274e7d;
+    font-size: 20px;
+}
+
+/* Set the borders and size of product image */
+.product-img {
+    width: 300px;
+    border-width: 5px;
+    border-style: double;
+    border-color: #484343
+}
+
+/* Set the size of catalogue image */
+.catalog-img {
+    width: 300px;
+}
