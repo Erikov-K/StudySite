@@ -6,59 +6,61 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="header">
-            <div class="main-title">
-                <a href="index.html">
-                    <img class="logo" src="images/bookmark.svg" alt="bookmark">
-                </a>
-                <br>bookstore.com<br>
+        <div class="container">
+            <div class="header">
+                <div class="main-title">
+                    <a href="index.html">
+                        <img class="logo" src="images/bookmark.svg" alt="bookmark">
+                    </a>
+                    <br>bookstore.com<br>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Main page</a>
+                        </li>
+                        <li>
+                            <a href="catalogue.html">Catalogue</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Main page</a>
-                    </li>
-                    <li>
-                        <a href="catalogue.html">Catalogue</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">About us</a>
-                    </li>
-                </ul>
+            <hr>
+            <h1>About us</h1>
+            <fieldset>
+                <legend>Write us</legend>
+                <form class="contacts-form" action="feedback.php" method="post">
+                    <input type="text" name="fullname" placeholder="Your full name">
+                    <br>
+                    <input type="email" name="email" placeholder="Your e-mail">
+                    <br>
+                    <input type="text" name="subject" placeholder="Message subject">
+                    <br>
+                    <textarea name="message" id="msgtext" rows="10" cols="52"></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </fieldset>
+            <h2>Contacts</h2>
+            <p>
+                <strong>Phone: </strong> +7 383 363 05 55<br>
+                <strong>Address: </strong> Novosibirsk, ploshchad' Karla Marksa, 7<br>
+                <strong>Email: </strong> bookstore@bookstore.com<br>
+            </p>
+            <br><br>                
+            <div id="map"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="scripts/map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRSNOVtAfKQCgqWI2o_FZ3O_ZfGy4M1dk&callback=initMap">
+            </script>
+            <hr>
+            <div class="footer">
+                &copy; All rights reserved.    
             </div>
-        </div>
-        <hr>
-        <h1>About us</h1>
-        <fieldset>
-            <legend>Write us</legend>
-            <form class="contacts-form" action="feedback.php" method="post">
-                <input type="text" name="fullname" placeholder="Your full name">
-                <br>
-                <input type="email" name="email" placeholder="Your e-mail">
-                <br>
-                <input type="text" name="subject" placeholder="Message subject">
-                <br>
-                <textarea name="message" id="msgtext" rows="10" cols="52"></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form>
-        </fieldset>
-        <h2>Contacts</h2>
-        <p>
-            <strong>Phone: </strong> +7 383 363 05 55<br>
-            <strong>Address: </strong> Novosibirsk, ploshchad' Karla Marksa, 7<br>
-            <strong>Email: </strong> bookstore@bookstore.com<br>
-        </p>
-        <br><br>                
-        <div id="map"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="scripts/map.js"></script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRSNOVtAfKQCgqWI2o_FZ3O_ZfGy4M1dk&callback=initMap">
-        </script>
-        <hr>
-        <div class="footer">
-            &copy; All rights reserved.    
         </div>
     </body>
 </html>
