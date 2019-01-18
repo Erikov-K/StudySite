@@ -4,16 +4,30 @@
         <meta charset="UTF-8">
         <title>bookstore.com</title>
         <link rel="stylesheet" href="styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/map.js"></script>
     </head>
     <body>
-        <h3>bookstore.com</h3>
-        <div class="main-menu">
-            <a href="index.html">Main page</a>
-            <br>
-            <a href="catalogue.html">Catalogue</a>
-            <br>
-            <a href="contacts.html">About us</a>
-            <br>
+        <div class="header">
+            <div class="main-title">
+                <a href="index.html">
+                    <img class="logo" src="images/bookmark.svg" alt="bookmark">
+                </a>
+                <br>bookstore.com<br>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Main page</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">About us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <hr>
         <h1>About us</h1>
@@ -26,8 +40,6 @@
                 <br>
                 <input type="text" name="subject" placeholder="Message subject">
                 <br>
-                <!--<label for="msgtext">Message body:</label>
-                <br>-->
                 <textarea name="message" id="msgtext" rows="10" cols="52"></textarea>
                 <br>
                 <input type="submit" value="Send">
@@ -40,30 +52,13 @@
             <strong>Email: </strong> bookstore@bookstore.com<br>
         </p>
         <br><br>                
-        <!-- Code below needed to adding a Google Map with a Marker to Website -->
-        <!--The div element for the map -->
         <div id="map"></div>
-        <script>
-            // Initialize and add the map
-            function initMap() {
-            // The location of Uluru
-            var uluru = {lat: 54.980047, lng: 82.897847};
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 14, center: uluru});
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({position: uluru, map: map});
-            }
-        </script>
-        <!--Load the API from the specified URL
-        * The async attribute allows the browser to render the page while the API loads
-        * The key parameter will contain your own API key (which is not needed for this tutorial)
-        * The callback parameter executes the initMap() function
-        -->
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRSNOVtAfKQCgqWI2o_FZ3O_ZfGy4M1dk&callback=initMap">
         </script>
         <hr>
-        &copy; All rights reserved.
+        <div class="footer">
+            &copy; All rights reserved.    
+        </div>
     </body>
 </html>

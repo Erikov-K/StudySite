@@ -6,14 +6,26 @@
         <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
-        <h3>bookstore.com</h3>
-        <div class="main-menu">
-            <a href="../index.html">Main page</a>
-            <br>
-            <a href="../catalogue.html">Catalogue</a>
-            <br>
-            <a href="../contacts.html">About us</a>
-            <br>
+        <div class="header">
+            <div class="main-title">
+                <a href="../index.html">
+                    <img class="logo" src="../images/bookmark.svg" alt="bookmark">
+                </a>
+                <br>bookstore.com<br>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">Main page</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../contacts.html">About us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <hr>
         <h1>HTML and CSS: Design and Build Websites</h1>
@@ -31,29 +43,44 @@
             You'll learn to Write HTML and CSS3 Structure web pages and sites Prepare images, audio, and video...<br>
         </p>
         <h2 class="product-header">Product details:</h2>
-            <ul class="product-features">
-                <li>
-                    <strong>Paperback:</strong> 490 pages<br>
-                </li>
-                <li>
-                    <strong>Publisher:</strong>  John Wiley & Sons; 1st edition (November 8, 2011)<br>
-                </li>
-                <li>
-                    <strong>Language:</strong>  English<br>
-                </li>
-                <li>
-                    <strong>ISBN-10:</strong> 1118008189<br>
-                </li>
-                <li>
-                    <strong>PISBN-13:</strong> 978-1118008188<br>
-                </li>
-                <li>
-                    <strong>Product Dimensions:</strong> 7.4 x 1.2 x 9.2 inches<br>
-                </li>
-                <li>
-                    <strong>Shipping Weight:</strong> 2.4 pounds<br>
-                </li>
-            </ul>
+        <table class="productFeatures">
+            <thead>
+                <tr>
+                    <th><u>Feature:</u></th>
+                    <th><u>Description:</u></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Paperback:</strong></td>
+                    <td>490 pages</td>
+                </tr>
+                <tr>
+                    <td><strong>Publisher:</strong></td>
+                    <td>John Wiley & Sons; 1st edition (November 8, 2011)</td>
+                </tr>
+                <tr>
+                    <td><strong>Language:</strong></td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td><strong>ISBN-10:</strong></td>
+                    <td>1118008189‬</td>
+                </tr>
+                <tr>
+                    <td><strong>PISBN-13:</strong></td>
+                    <td>978-1118008188</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Dimensions:</strong></td>
+                    <td>7.4 x 1.2 x 9.2 inches</td>
+                </tr>
+                <tr>
+                    <td><strong>Shipping Weight:</strong></td>
+                    <td>2.4 pounds</td>
+                </tr>
+            </tbody>
+        </table>
         <h2 class="product-header">Description:</h2>
         <p class="product-fullDescription">
             Every day, more and more people want to learn some HTML and CSS. Joining the professional web designers<br>
@@ -84,6 +111,8 @@
             jQuery</i>,9781119038634; and in softcover - <i>Web Design with HTML,CSS, JavaScript and jQuery</i>, 9781118907443
         </p>
         <hr>
-        &copy; All rights reserved.
+        <div class="footer">
+            &copy; All rights reserved.    
+        </div>
     </body>
 </html>
