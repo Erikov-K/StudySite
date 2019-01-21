@@ -1,33 +1,46 @@
 /* Set the size of the div element that contains the map */
 #map {
-    height: 400px;
+    height: 374px;
     width: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: 5% 10%;
 }
 
 /* Set the background color, margins, font of the body of page */    
 body {
     background: #f8f8f8;
     font-family: 'Times New Roman', Times, serif;
-    margin-left:  25%;
-    margin-right:  25%;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 /* Set the logo image size */    
 .logo {
     width: 15%;
+    margin-left: 5%;
 }
 
 /* Set the main-title font-size and margin */    
 .main-title{
     font: 24px bold;
+    float: left;
+    width: 20%;
 }
 
 /* Set the main-menu li font-size */    
 .main-menu li{
     font-size: 24px;
     list-style: none;
+    display: inline-block;
+    padding: 3% 3%;
+}
+
+/* Set the main-menu style */  
+.main-menu {
+    float: right;
+    margin-right: 1%;
+    width: 400px;
 }
 
 /*Remove all Hyperlink Underlines Site-Wide */
@@ -37,22 +50,22 @@ a {
 
 /* Set the colors for unvisited link */
 a:link {
-    color: red;
+    color: darkslategray
 }
 
 /* Set the colors for visited link */
-a:visited {
-    color: green;
-} 
+/* a:visited {
+     color: green; 
+} */
 
 /* Set the colors for mouse over link */
 a:hover {
-    color: hotpink;
+    color: darkgray;
 } 
 
 /* Set the colors for selected link */
 a:active {
-    color: blue;
+    color: black;
 }
 
 /* Set the product header paragraph style */
@@ -69,6 +82,7 @@ a:active {
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+    padding: 1%;
 }
 
 /* Set the product description paragraph style */
@@ -146,11 +160,124 @@ td, th, caption {
 
 /* Set the size of catalogue image */
 .catalog-img {
-    width: 300px;
+    width: 100%;
+    display: block;
 }
 
 /* Set the font-size of catalogue a href */
 .catalogue a {
  font-size: 24px;
  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Set the footer style */
+.footer {
+    text-align: right;
+    padding: 1% 1% 0 0;
+}
+
+/* Set the header style */
+.header {
+    position: relative;
+}
+
+/* Set the header and footer height and background */
+.header, .footer {
+    height: 75px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(178,178,178,0.7));
+}
+
+/* Set the product short description margins */
+.product-shortInfo {
+    margin-bottom: 15px;
+}
+
+/* Set the product short description pseudo element */
+.product-shortInfo:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+/* Set the product short description image wrap style */
+.product-imgWrap {
+    width: 350px;
+    float: left;
+}
+
+/* Set the product short description image wrap a style */
+.product-ImgWrap a {
+    display: block;
+}
+
+/* Set the product overview style */
+.product-overview {
+    width: 60%;
+    float: right;
+    margin-left: 5%;
+}
+
+/* Set the product buy button style */
+.product-buyButton {
+    float: right;
+    padding: 3%;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #274e7d;
+    font-weight: bold;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232+++ */
+    background: rgb(242,246,248); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+}
+
+.product-buyButton:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dee1e2+0,d8e1e7+50,b5c6d0+51,cedce5+100 */
+    background: rgb(222,225,226); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(222,225,226,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(206,220,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(222,225,226,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(206,220,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(222,225,226,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(206,220,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee1e2', endColorstr='#cedce5',GradientType=0 ); /* IE6-9 */
+}
+
+.product-buyButton:active {
+    color: #528426;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff52+0,91e842+100;Neon */
+    background: rgb(210,255,82); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Set the catalogue products pseudo element style */
+.catalogue-products:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+/* Set the catalogue product element style */
+.catalogue-unit {
+    width: 281px;
+    float: left;
+    margin-right: 7.5%;
+    outline: 1px solid #ccc;
+}
+
+.catalogue-unit:nth-child(-n+3) {
+    /* margin-top: 35px; */
+    margin-top: 3%;
+}
+
+.catalogue-unit:nth-child(2n) {
+    margin-right: 0;
+}
+
+.catalogue-unit:nth-child(2n+1) {
+    margin-left: 7.5%;
 }
